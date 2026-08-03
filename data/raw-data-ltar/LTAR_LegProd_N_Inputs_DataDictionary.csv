@@ -1,0 +1,9 @@
+Column Name,Unit,Descriptions,,Code Definition
+Crop,,"Crop type sampled for annual aboveground net primary production, either Maize or Soybean",,
+Site_code,,LTAR site code,,"KBS is Kellogg Biological Station, LCB is Lower Chesapeake Bay, NH is Northern Headwaters, PRHPA is Platte River, High Plains Aquifer, UCB is Upper Chesapeake Bay, UMRB is Upper Mississippi River Basin"
+Harvest_month,%m,Harvest month for annual aboveground net primary production data collection,,
+Year,%Y,Year of annual aboveground net primary production data collection,,
+ANPP,kg ha-1,Mean annual aboveground net primary production ,,
+N_amt,kgN/ha,Total amount of nitrogen (N) inputs in kilograms of N per hectare for crop production,,
+N_cat,,"Categorization of the amount of nitrogen (N) inputs for crop production; listed as either High, Low, or No",,
+PPT,mm,"Annual precipitation in millimeters, calculated as the monthly precipitation from the harvest month plus the precipitation from the previous eleven months ",,

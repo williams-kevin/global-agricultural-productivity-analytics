@@ -1,0 +1,1678 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='AgroecosystemPerformanceAnalyticsDashboard' path='/workbooks' revision='3.5' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ltar_clean_nitrogen_inputs_data' inline='true' name='federated.1op77yh1cm3sbm1ad4h5814g46hz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ltar_clean_nitrogen_inputs_data' name='textscan.1rfwhxi14nbgym1c8wu1o0wvy2on'>
+            <connection class='textscan' directory='C:/Users/HP/Documents/ltar-global-eda/Data/clean-data-ltar' filename='ltar_clean_nitrogen_inputs_data.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1rfwhxi14nbgym1c8wu1o0wvy2on' name='ltar_clean_nitrogen_inputs_data.csv' table='[ltar_clean_nitrogen_inputs_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+            <column datatype='string' name='crop' ordinal='0' />
+            <column datatype='string' name='site_code' ordinal='1' />
+            <column datatype='integer' name='harvest_month' ordinal='2' />
+            <column datatype='integer' name='year' ordinal='3' />
+            <column datatype='real' name='anpp' ordinal='4' />
+            <column datatype='real' name='n_amt' ordinal='5' />
+            <column datatype='string' name='n_cat' ordinal='6' />
+            <column datatype='real' name='ppt' ordinal='7' />
+            <column datatype='string' name='type' ordinal='8' />
+            <column datatype='real' name='wue' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ltar_clean_nitrogen_inputs_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;\&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crop</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[crop]</local-name>
+            <parent-name>[ltar_clean_nitrogen_inputs_data.csv]</parent-name>
+            <remote-alias>crop</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ltar_clean_nitrogen_inputs_data.csv_855610801988477D905C949554CBC6FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>site_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[site_code]</local-name>
+            <parent-name>[ltar_clean_nitrogen_inputs_data.csv]</parent-name>
+            <remote-alias>site_code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ltar_clean_nitrogen_inputs_data.csv_855610801988477D905C949554CBC6FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>harvest_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[harvest_month]</local-name>
+            <parent-name>[ltar_clean_nitrogen_inputs_data.csv]</parent-name>
+            <remote-alias>harvest_month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltar_clean_nitrogen_inputs_data.csv_855610801988477D905C949554CBC6FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[ltar_clean_nitrogen_inputs_data.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltar_clean_nitrogen_inputs_data.csv_855610801988477D905C949554CBC6FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>anpp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[anpp]</local-name>
+            <parent-name>[ltar_clean_nitrogen_inputs_data.csv]</parent-name>
+            <remote-alias>anpp</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltar_clean_nitrogen_inputs_data.csv_855610801988477D905C949554CBC6FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_amt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[n_amt]</local-name>
+            <parent-name>[ltar_clean_nitrogen_inputs_data.csv]</parent-name>
+            <remote-alias>n_amt</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltar_clean_nitrogen_inputs_data.csv_855610801988477D905C949554CBC6FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_cat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[n_cat]</local-name>
+            <parent-name>[ltar_clean_nitrogen_inputs_data.csv]</parent-name>
+            <remote-alias>n_cat</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ltar_clean_nitrogen_inputs_data.csv_855610801988477D905C949554CBC6FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ppt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ppt]</local-name>
+            <parent-name>[ltar_clean_nitrogen_inputs_data.csv]</parent-name>
+            <remote-alias>ppt</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltar_clean_nitrogen_inputs_data.csv_855610801988477D905C949554CBC6FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[ltar_clean_nitrogen_inputs_data.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ltar_clean_nitrogen_inputs_data.csv_855610801988477D905C949554CBC6FE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wue]</local-name>
+            <parent-name>[ltar_clean_nitrogen_inputs_data.csv]</parent-name>
+            <remote-alias>wue</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltar_clean_nitrogen_inputs_data.csv_855610801988477D905C949554CBC6FE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ltar_clean_nitrogen_inputs_data.csv' datatype='table' name='[__tableau_internal_object_id__].[ltar_clean_nitrogen_inputs_data.csv_855610801988477D905C949554CBC6FE]' role='measure' type='quantitative' />
+      <column caption='Anpp' datatype='real' name='[anpp]' role='measure' type='quantitative' />
+      <column caption='Crop' datatype='string' name='[crop]' role='dimension' type='nominal' />
+      <column caption='Harvest Month' datatype='integer' name='[harvest_month]' role='dimension' type='quantitative' />
+      <column caption='N Amt' datatype='real' name='[n_amt]' role='measure' type='quantitative' />
+      <column caption='N Cat' datatype='string' name='[n_cat]' role='dimension' type='nominal' />
+      <column caption='Ppt' datatype='real' name='[ppt]' role='measure' type='quantitative' />
+      <column caption='Site Code' datatype='string' name='[site_code]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Wue' datatype='real' name='[wue]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[n_cat]' derivation='None' name='[none:n_cat:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0eexwdh0i6ntd3138931x0lhafsk.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>crop</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[crop]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>crop</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ltar_clean_nitrogen_inputs_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>site_code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[site_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>site_code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ltar_clean_nitrogen_inputs_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>harvest_month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[harvest_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>harvest_month</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ltar_clean_nitrogen_inputs_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ltar_clean_nitrogen_inputs_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>anpp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[anpp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>anpp</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ltar_clean_nitrogen_inputs_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>380</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>n_amt</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[n_amt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>n_amt</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ltar_clean_nitrogen_inputs_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>n_cat</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[n_cat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>n_cat</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ltar_clean_nitrogen_inputs_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ppt</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ppt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ppt</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ltar_clean_nitrogen_inputs_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>103</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ltar_clean_nitrogen_inputs_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[wue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wue</remote-alias>
+              <ordinal>9</ordinal>
+              <family>ltar_clean_nitrogen_inputs_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>380</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:n_cat:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Côte-d&apos;&apos;Ivoire&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='ltar_clean_nitrogen_inputs_data.csv' id='ltar_clean_nitrogen_inputs_data.csv_855610801988477D905C949554CBC6FE'>
+            <properties context=''>
+              <relation connection='textscan.1rfwhxi14nbgym1c8wu1o0wvy2on' name='ltar_clean_nitrogen_inputs_data.csv' table='[ltar_clean_nitrogen_inputs_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+                  <column datatype='string' name='crop' ordinal='0' />
+                  <column datatype='string' name='site_code' ordinal='1' />
+                  <column datatype='integer' name='harvest_month' ordinal='2' />
+                  <column datatype='integer' name='year' ordinal='3' />
+                  <column datatype='real' name='anpp' ordinal='4' />
+                  <column datatype='real' name='n_amt' ordinal='5' />
+                  <column datatype='string' name='n_cat' ordinal='6' />
+                  <column datatype='real' name='ppt' ordinal='7' />
+                  <column datatype='string' name='type' ordinal='8' />
+                  <column datatype='real' name='wue' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='ltar_clean_productivity_data' inline='true' name='federated.0jlfgo00q4za1k17l6jsy0cor1zu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ltar_clean_productivity_data' name='textscan.0lcptar1neq95112gi7jy05s7gq9'>
+            <connection class='textscan' directory='C:/Users/HP/Documents/ltar-global-eda/Data/clean-data-ltar' filename='ltar_clean_productivity_data.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0lcptar1neq95112gi7jy05s7gq9' name='ltar_clean_productivity_data.csv' table='[ltar_clean_productivity_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='site_code' ordinal='1' />
+            <column datatype='string' name='type' ordinal='2' />
+            <column datatype='string' name='crop' ordinal='3' />
+            <column datatype='string' name='cereal' ordinal='4' />
+            <column datatype='real' name='map' ordinal='5' />
+            <column datatype='real' name='anpp' ordinal='6' />
+            <column datatype='real' name='ppt' ordinal='7' />
+            <column datatype='real' name='wue' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ltar_clean_productivity_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;\&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[ltar_clean_productivity_data.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltar_clean_productivity_data.csv_64D64BD7B18549CEA963D4D6D308A241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>site_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[site_code]</local-name>
+            <parent-name>[ltar_clean_productivity_data.csv]</parent-name>
+            <remote-alias>site_code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ltar_clean_productivity_data.csv_64D64BD7B18549CEA963D4D6D308A241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[ltar_clean_productivity_data.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ltar_clean_productivity_data.csv_64D64BD7B18549CEA963D4D6D308A241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crop</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[crop]</local-name>
+            <parent-name>[ltar_clean_productivity_data.csv]</parent-name>
+            <remote-alias>crop</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ltar_clean_productivity_data.csv_64D64BD7B18549CEA963D4D6D308A241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cereal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cereal]</local-name>
+            <parent-name>[ltar_clean_productivity_data.csv]</parent-name>
+            <remote-alias>cereal</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ltar_clean_productivity_data.csv_64D64BD7B18549CEA963D4D6D308A241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>map</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[map]</local-name>
+            <parent-name>[ltar_clean_productivity_data.csv]</parent-name>
+            <remote-alias>map</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltar_clean_productivity_data.csv_64D64BD7B18549CEA963D4D6D308A241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>anpp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[anpp]</local-name>
+            <parent-name>[ltar_clean_productivity_data.csv]</parent-name>
+            <remote-alias>anpp</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltar_clean_productivity_data.csv_64D64BD7B18549CEA963D4D6D308A241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ppt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ppt]</local-name>
+            <parent-name>[ltar_clean_productivity_data.csv]</parent-name>
+            <remote-alias>ppt</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltar_clean_productivity_data.csv_64D64BD7B18549CEA963D4D6D308A241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wue]</local-name>
+            <parent-name>[ltar_clean_productivity_data.csv]</parent-name>
+            <remote-alias>wue</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltar_clean_productivity_data.csv_64D64BD7B18549CEA963D4D6D308A241]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ltar_clean_productivity_data.csv' datatype='table' name='[__tableau_internal_object_id__].[ltar_clean_productivity_data.csv_64D64BD7B18549CEA963D4D6D308A241]' role='measure' type='quantitative' />
+      <column caption='Anpp' datatype='real' name='[anpp]' role='measure' type='quantitative' />
+      <column caption='Cereal' datatype='string' name='[cereal]' role='dimension' type='nominal' />
+      <column caption='Crop' datatype='string' name='[crop]' role='dimension' type='nominal' />
+      <column caption='Map' datatype='real' name='[map]' role='measure' type='quantitative' />
+      <column caption='Ppt' datatype='real' name='[ppt]' role='measure' type='quantitative' />
+      <column caption='Site Code' datatype='string' name='[site_code]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Wue' datatype='real' name='[wue]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[site_code]' derivation='None' name='[none:site_code:nk]' pivot='key' type='nominal' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_060ocvf0m4ouhj1aw6ire1k7bde0.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ltar_clean_productivity_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>site_code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[site_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>site_code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ltar_clean_productivity_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ltar_clean_productivity_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>crop</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[crop]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>crop</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ltar_clean_productivity_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cereal</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cereal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cereal</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ltar_clean_productivity_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>map</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[map]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>map</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ltar_clean_productivity_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>anpp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[anpp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>anpp</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ltar_clean_productivity_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>333</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ppt</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ppt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ppt</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ltar_clean_productivity_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>285</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[wue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wue</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ltar_clean_productivity_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>333</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:site_code:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;SP&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;NH&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;PRHPA&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;ABS-UF&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;LCB&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;CAF&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;UMRB&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;GB_wbs&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;KBS&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;GB_los&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;CPER&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;JER&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;UCB&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ECB&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;GB_mbs&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TG&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;NP&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Croplands&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Rangelands&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Pasture&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[none:type:nk]' palette=':filled' type='shape'>
+            <map to=':filled/circle'>
+              <bucket>&quot;Croplands&quot;</bucket>
+            </map>
+            <map to=':filled/plus'>
+              <bucket>&quot;Rangelands&quot;</bucket>
+            </map>
+            <map to=':filled/square'>
+              <bucket>&quot;Pasture&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Côte-d&apos;&apos;Ivoire&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='ltar_clean_productivity_data.csv' id='ltar_clean_productivity_data.csv_64D64BD7B18549CEA963D4D6D308A241'>
+            <properties context=''>
+              <relation connection='textscan.0lcptar1neq95112gi7jy05s7gq9' name='ltar_clean_productivity_data.csv' table='[ltar_clean_productivity_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='string' name='site_code' ordinal='1' />
+                  <column datatype='string' name='type' ordinal='2' />
+                  <column datatype='string' name='crop' ordinal='3' />
+                  <column datatype='string' name='cereal' ordinal='4' />
+                  <column datatype='real' name='map' ordinal='5' />
+                  <column datatype='real' name='anpp' ordinal='6' />
+                  <column datatype='real' name='ppt' ordinal='7' />
+                  <column datatype='real' name='wue' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0jlfgo00q4za1k17l6jsy0cor1zu'>
+      <datasources>
+        <datasource caption='ltar_clean_productivity_data' name='federated.0jlfgo00q4za1k17l6jsy0cor1zu' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0jlfgo00q4za1k17l6jsy0cor1zu'>
+        <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+        <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1op77yh1cm3sbm1ad4h5814g46hz'>
+        <column caption='Crop' datatype='string' name='[crop]' role='dimension' type='nominal' />
+        <column-instance column='[crop]' derivation='None' name='[none:crop:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:type:nk]' member='&quot;Croplands&quot;' />
+          <groupfilter function='member' level='[none:type:nk]' member='&quot;Pasture&quot;' />
+          <groupfilter function='member' level='[none:type:nk]' member='&quot;Rangelands&quot;' />
+        </groupfilter>
+        <target field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:crop:nk]'>
+        <groupfilter function='level-members' level='[none:crop:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+    <shared-view name='federated.1op77yh1cm3sbm1ad4h5814g46hz'>
+      <datasources>
+        <datasource caption='ltar_clean_nitrogen_inputs_data' name='federated.1op77yh1cm3sbm1ad4h5814g46hz' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0jlfgo00q4za1k17l6jsy0cor1zu'>
+        <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+        <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1op77yh1cm3sbm1ad4h5814g46hz'>
+        <column caption='Crop' datatype='string' name='[crop]' role='dimension' type='nominal' />
+        <column-instance column='[crop]' derivation='None' name='[none:crop:nk]' pivot='key' type='nominal' />
+        <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+        <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:type:nk]' member='&quot;Croplands&quot;' />
+          <groupfilter function='member' level='[none:type:nk]' member='&quot;Pasture&quot;' />
+          <groupfilter function='member' level='[none:type:nk]' member='&quot;Rangelands&quot;' />
+        </groupfilter>
+        <target field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:type:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:crop:nk]'>
+        <groupfilter function='level-members' level='[none:crop:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Ecosystem_wue_ranking'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Google Sans,Arial,sans-serif' fontsize='8' lmargin='600' rmargin='600'>Water-Use Efficiency (WUE) Profile by Ecosystem Type</run>
+            <run fontalignment='1' lmargin='600' rmargin='600'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ltar_clean_productivity_data' name='federated.0jlfgo00q4za1k17l6jsy0cor1zu' />
+            <datasource caption='ltar_clean_nitrogen_inputs_data' name='federated.1op77yh1cm3sbm1ad4h5814g46hz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jlfgo00q4za1k17l6jsy0cor1zu'>
+            <column caption='Anpp' datatype='real' name='[anpp]' role='measure' type='quantitative' />
+            <column-instance column='[anpp]' derivation='Avg' name='[avg:anpp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[wue]' derivation='Avg' name='[avg:wue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[site_code]' derivation='None' name='[none:site_code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Site Code' datatype='string' name='[site_code]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column caption='Wue' datatype='real' name='[wue]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1op77yh1cm3sbm1ad4h5814g46hz'>
+            <column caption='Crop' datatype='string' name='[crop]' role='dimension' type='nominal' />
+            <column-instance column='[crop]' derivation='None' name='[none:crop:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:site_code:nk]' direction='ASC' using='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]' />
+          <computed-sort column='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]' direction='ASC' using='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]' />
+          <slices>
+            <column>[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]</column>
+            <column>[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:crop:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]' scope='rows' value=' (WUE) [g/m²/mm]' />
+            <format attr='width' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]' value='44' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]' value='10' />
+            <format attr='font-size' data-class='total' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]' value='8' />
+            <format attr='font-weight' data-class='total' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]' value='normal' />
+            <format attr='text-orientation' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:site_code:nk]' value='90' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' data-class='subtotal' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:site_code:nk]' value='8' />
+            <format attr='height' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]' value='23' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='wrap' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:site_code:nk]' value='off' />
+            <format attr='vertical-align' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:site_code:nk]' value='top' />
+            <format attr='text-align' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:site_code:nk]' value='left' />
+            <format attr='text-orientation' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:site_code:nk]' value='-90' />
+            <format attr='font-size' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:site_code:nk]' value='8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-style' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]' value='italic' />
+            <format attr='font-size' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]' value='8' />
+            <format attr='color' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]' value='Ecosystem Type'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Ecosystem Type</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]' />
+              <tooltip column='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:anpp:qk]' />
+              <text column='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#898989' fontsize='8' italic='true'>Ecosystem Type</run>
+                <run bold='true'><![CDATA[ :  <[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#898989' fontsize='8' italic='true'>Station Code</run>
+                <run bold='true' fontcolor='#898989'>Æ </run>
+                <run bold='true'><![CDATA[:        <[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:site_code:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#898989' fontsize='8' italic='true'>Average ANPP</run>
+                <run bold='true'><![CDATA[ :   <[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:anpp:qk]>  g/m²/year]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#898989' fontsize='8' italic='true'>Average WUE</run>
+                <run bold='true'><![CDATA[ :    <[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]> g/m²/mm]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#3b6e4c' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]</rows>
+        <cols>([federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk] / [federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:site_code:nk])</cols>
+      </table>
+      <simple-id uuid='{3A6E8F7B-254A-45F4-B6EA-028BEF10B77B}' />
+    </worksheet>
+    <worksheet name='Nitrogen_Impact_Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Google Sans,Arial,sans-serif' fontsize='8' lmargin='600' rmargin='600'>Crop Productivity (ANPP) Response to Nitrogen  Fertilization</run>
+            <run fontalignment='1' lmargin='600' rmargin='600'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ltar_clean_nitrogen_inputs_data' name='federated.1op77yh1cm3sbm1ad4h5814g46hz' />
+            <datasource caption='ltar_clean_productivity_data' name='federated.0jlfgo00q4za1k17l6jsy0cor1zu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jlfgo00q4za1k17l6jsy0cor1zu'>
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1op77yh1cm3sbm1ad4h5814g46hz'>
+            <column caption='Anpp' datatype='real' name='[anpp]' role='measure' type='quantitative' />
+            <column caption='Crop' datatype='string' name='[crop]' role='dimension' type='nominal' />
+            <column caption='N Cat' datatype='string' name='[n_cat]' role='dimension' type='nominal' />
+            <column-instance column='[crop]' derivation='None' name='[none:crop:nk]' pivot='key' type='nominal' />
+            <column-instance column='[n_cat]' derivation='None' name='[none:n_cat:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[anpp]' derivation='Sum' name='[sum:anpp:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]' direction='ASC' using='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[sum:anpp:qk]' />
+          <slices>
+            <column>[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:crop:nk]</column>
+            <column>[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[sum:anpp:qk]' scope='rows' value='ANPP [g/m²/year]' />
+            <format attr='height' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]' value='28' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-weight' data-class='total' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]' value='normal' />
+            <format attr='font-style' data-class='total' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]' value='normal' />
+            <format attr='font-size' data-class='total' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]' value='9' />
+            <format attr='font-style' data-class='subtotal' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]' value='normal' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]' value='normal' />
+            <format attr='text-align' data-class='total' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]' value='center' />
+            <format attr='vertical-align' data-class='total' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]' value='center' />
+            <format attr='color' data-class='subtotal' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]' value='Nitrogen Level'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Nitrogen Level</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[sum:anpp:qk]' value='8' />
+            <format attr='color' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[sum:anpp:qk]' value='#000000' />
+            <format attr='font-style' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[sum:anpp:qk]' value='normal' />
+            <format attr='font-weight' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[sum:anpp:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:crop:nk]' value='Vegetation'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Vegetation</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[sum:anpp:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[sum:anpp:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#898989' fontsize='8' italic='true'>Crop Type</run>
+                <run bold='true'><![CDATA[ :      <[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:crop:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#898989' fontsize='8' italic='true'>Nitrogen Level</run>
+                <run bold='true'><![CDATA[ : <[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#898989' fontsize='8' italic='true'>Productivity</run>
+                <run bold='true'><![CDATA[ :   <[federated.1op77yh1cm3sbm1ad4h5814g46hz].[sum:anpp:qk]> g/m²/year]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1op77yh1cm3sbm1ad4h5814g46hz].[sum:anpp:qk]</rows>
+        <cols>[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:n_cat:nk]</cols>
+      </table>
+      <simple-id uuid='{3560BEAF-BD45-47A0-B4DF-4CE3F3EAB07D}' />
+    </worksheet>
+    <worksheet name='Precipitation_vs_Productivity'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='8'>Ecosystem Productivity Response to Annual Precipitation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ltar_clean_productivity_data' name='federated.0jlfgo00q4za1k17l6jsy0cor1zu' />
+            <datasource caption='ltar_clean_nitrogen_inputs_data' name='federated.1op77yh1cm3sbm1ad4h5814g46hz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jlfgo00q4za1k17l6jsy0cor1zu'>
+            <column caption='Anpp' datatype='real' name='[anpp]' role='measure' type='quantitative' />
+            <column-instance column='[type]' derivation='Attribute' name='[attr:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Ppt' datatype='real' name='[ppt]' role='measure' type='quantitative' />
+            <column-instance column='[anpp]' derivation='Sum' name='[sum:anpp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ppt]' derivation='Sum' name='[sum:ppt:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1op77yh1cm3sbm1ad4h5814g46hz'>
+            <column caption='Crop' datatype='string' name='[crop]' role='dimension' type='nominal' />
+            <column-instance column='[crop]' derivation='None' name='[none:crop:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]</column>
+            <column>[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:crop:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[sum:ppt:qk]' scope='cols' value='Annual Precipitation (PPT) [mm]' />
+            <format attr='title' class='0' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[sum:anpp:qk]' scope='rows' value=' (ANPP)  g/m²/year' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[sum:ppt:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' scope='rows' value='#898989' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='color' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[sum:ppt:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[sum:ppt:qk]' value='8' />
+            <format attr='font-weight' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[sum:ppt:qk]' value='bold' />
+            <format attr='font-style' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[sum:ppt:qk]' value='normal' />
+            <format attr='font-size' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[sum:anpp:qk]' value='8' />
+            <format attr='font-weight' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[sum:anpp:qk]' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]' />
+              <shape column='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]' />
+              <tooltip column='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[attr:type:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='false' enabled='true' exclude-color='true' exclude-intercept='false' fit='linear' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#898989' fontsize='8' italic='true'>Ecosystem Type</run>
+                <run bold='true'><![CDATA[ : <[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[attr:type:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#898989' fontsize='8' italic='true'>Precipitation</run>
+                <run bold='true'><![CDATA[ :  <[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[sum:ppt:qk]> mm]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#898989' fontsize='8' italic='true'>Productivity</run>
+                <run bold='true'><![CDATA[ :   <[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[sum:anpp:qk]> g/m²/year]]></run>
+                <run>Æ&#10;&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+                <format attr='size' value='1' />
+                <format attr='mark-color' value='#3b6e4c' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='3' />
+                <format attr='stroke-color' value='#00000067' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[sum:anpp:qk]</rows>
+        <cols>[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[sum:ppt:qk]</cols>
+      </table>
+      <simple-id uuid='{E445DD49-C555-4978-82B4-D54332B42AE2}' />
+    </worksheet>
+    <worksheet name='scorecard_ANPP'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#898989' fontname='Benton Sans Book' fontsize='8'>Average Annual Net Primary Productivity (ANPP)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ltar_clean_productivity_data' name='federated.0jlfgo00q4za1k17l6jsy0cor1zu' />
+            <datasource caption='ltar_clean_nitrogen_inputs_data' name='federated.1op77yh1cm3sbm1ad4h5814g46hz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jlfgo00q4za1k17l6jsy0cor1zu'>
+            <column caption='Anpp' datatype='real' name='[anpp]' role='measure' type='quantitative' />
+            <column-instance column='[anpp]' derivation='Avg' name='[avg:anpp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1op77yh1cm3sbm1ad4h5814g46hz'>
+            <column caption='Crop' datatype='string' name='[crop]' role='dimension' type='nominal' />
+            <column-instance column='[crop]' derivation='None' name='[none:crop:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]</column>
+            <column>[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:crop:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' data-class='subtotal' value='8' />
+            <format attr='font-size' data-class='total' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:anpp:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#3b6e4c' fontsize='10'>Avg ANPP</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#3b6e4c' fontsize='10'><![CDATA[<[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:anpp:qk]>  ]]></run>
+                <run bold='true' fontcolor='#3b6e4c' fontname='Benton Sans Book' fontsize='10'>g/m²/year</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7C6089BC-CD47-4045-BD95-0AE2785C10A7}' />
+    </worksheet>
+    <worksheet name='scorecard_wue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#898989' fontname='Benton Sans Book' fontsize='8'>Average Water-Use Efficiency (WUE)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ltar_clean_productivity_data' name='federated.0jlfgo00q4za1k17l6jsy0cor1zu' />
+            <datasource caption='ltar_clean_nitrogen_inputs_data' name='federated.1op77yh1cm3sbm1ad4h5814g46hz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jlfgo00q4za1k17l6jsy0cor1zu'>
+            <column-instance column='[wue]' derivation='Avg' name='[avg:wue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column caption='Wue' datatype='real' name='[wue]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1op77yh1cm3sbm1ad4h5814g46hz'>
+            <column caption='Crop' datatype='string' name='[crop]' role='dimension' type='nominal' />
+            <column-instance column='[crop]' derivation='None' name='[none:crop:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]</column>
+            <column>[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:crop:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' data-class='subtotal' value='9' />
+            <format attr='font-size' data-class='total' value='9' />
+            <format attr='text-format' field='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' data-class='total' value='9' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' value='9' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='9' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#3b6e4c' fontsize='10'>Avg WUE</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#3b6e4c' fontsize='10'><![CDATA[<[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[avg:wue:qk]> ]]></run>
+                <run bold='true' fontcolor='#3b6e4c' fontname='Benton Sans Book' fontsize='10'>g/m²/mm</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.097955800592899323' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{375F6890-3E6C-4E31-A00B-B16EFD2C49EA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Executive_Insights_Dashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Google Sans,Arial,sans-serif' fontsize='11' lmargin='600' rmargin='600'>LTAR Agroecosystem Productivity &amp; Water-Use Efficiency Platform</run>
+            <run fontalignment='1' lmargin='600' rmargin='600'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#3b6e4c' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='font-family' value='Verdana' />
+        </style-rule>
+      </style>
+      <size maxheight='700' maxwidth='900' minheight='600' minwidth='800' sizing-mode='range' />
+      <datasources>
+        <datasource caption='ltar_clean_productivity_data' name='federated.0jlfgo00q4za1k17l6jsy0cor1zu' />
+        <datasource caption='ltar_clean_nitrogen_inputs_data' name='federated.1op77yh1cm3sbm1ad4h5814g46hz' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0jlfgo00q4za1k17l6jsy0cor1zu'>
+        <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+        <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1op77yh1cm3sbm1ad4h5814g46hz'>
+        <column caption='Crop' datatype='string' name='[crop]' role='dimension' type='nominal' />
+        <column-instance column='[crop]' derivation='None' name='[none:crop:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97714' id='16' param='horz' type-v2='layout-flow' w='98222' x='889' y='1143'>
+            <zone h='97714' id='14' type-v2='layout-basic' w='98222' x='889' y='1143'>
+              <zone h='97714' id='21' mode='checkdropdown' name='Nitrogen_Impact_Analysis' param='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:crop:nk]' type-v2='filter' w='98222' x='889' y='1143'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#f5ead7' />
+          </zone-style>
+        </zone>
+        <zone h='8750' id='17' mode='checkdropdown' name='Ecosystem_wue_ranking' param='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]' type-v2='filter' w='16471' x='65593' y='7875' />
+        <zone h='9333' id='9' name='scorecard_wue' show-title='false' w='20500' x='26500' y='7833' />
+        <zone h='9667' id='8' name='scorecard_ANPP' show-title='false' w='23000' x='750' y='7833' />
+        <zone fixed-size='30' h='5250' id='7' is-fixed='true' type-v2='title' w='69839' x='15373' y='1250' />
+        <zone h='35250' id='20' name='Nitrogen_Impact_Analysis' w='98389' x='805' y='63375' />
+        <zone h='42875' id='18' name='Precipitation_vs_Productivity' w='50073' x='49195' y='19625' />
+        <zone h='42625' id='13' name='Ecosystem_wue_ranking' w='48389' x='732' y='20000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Google Sans,Arial,sans-serif' fontsize='11' lmargin='600' rmargin='600'>LTAR Agroecosystem Productivity &amp; Water-Use Efficiency Platform</run>
+                <run fontalignment='1' lmargin='600' rmargin='600'>Æ&#10;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='72' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97714' id='71' param='vert' type-v2='layout-flow' w='98222' x='889' y='1143'>
+                <zone fixed-size='30' h='5250' id='7' type-v2='title' w='69839' x='15373' y='1250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='67' h='9667' id='8' is-fixed='true' name='scorecard_ANPP' show-title='false' w='23000' x='750' y='7833'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='9333' id='9' is-fixed='true' name='scorecard_wue' show-title='false' w='20500' x='26500' y='7833'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42875' id='18' is-fixed='true' name='Precipitation_vs_Productivity' w='50073' x='49195' y='19625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8750' id='17' mode='checkdropdown' name='Ecosystem_wue_ranking' param='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]' type-v2='filter' w='16471' x='65593' y='7875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42625' id='13' is-fixed='true' name='Ecosystem_wue_ranking' w='48389' x='732' y='20000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9625' id='21' mode='checkdropdown' name='Nitrogen_Impact_Analysis' param='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:crop:nk]' type-v2='filter' w='12445' x='83748' y='7875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='246' h='35250' id='20' is-fixed='true' name='Nitrogen_Impact_Analysis' w='98389' x='805' y='63375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#f5ead7' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E659C540-1638-4EBB-BFB0-8A35E9090E42}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='75'>
+    <window class='dashboard' maximized='true' name='Executive_Insights_Dashboard'>
+      <viewpoints>
+        <viewpoint name='Ecosystem_wue_ranking'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Nitrogen_Impact_Analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Precipitation_vs_Productivity'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='scorecard_ANPP'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='scorecard_wue'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='21' />
+      <device-preview visible='true'>
+        <device name='Large Desktop Monitor' type='Desktop' />
+      </device-preview>
+      <simple-id uuid='{16D875A8-BFFD-4BE1-9FAF-DB6E70060A1A}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Ecosystem_wue_ranking'>
+      <cards>
+        <edge name='left'>
+          <strip size='204'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6B9856C0-3ECB-43A1-A55E-39AA79B8520F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Nitrogen_Impact_Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1op77yh1cm3sbm1ad4h5814g46hz].[none:crop:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{66F210C8-18C9-40CF-8E1D-3A373C06011C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Precipitation_vs_Productivity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0jlfgo00q4za1k17l6jsy0cor1zu].[none:type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F8DD06B4-3472-441B-B06D-06ECA5E8AD6D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='scorecard_ANPP'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{20D1BE74-D436-47A9-8178-AFC2409783F1}' />
+    </window>
+    <window class='worksheet' hidden='true' name='scorecard_wue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B0D2CEF9-27AE-4DBC-A9E5-67B92E19F434}' />
+    </window>
+  </windows>
+</workbook>
