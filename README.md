@@ -1,11 +1,9 @@
 # 🌍 Global Agricultural & Rangeland Productivity Analytics (LTAR)
 
-![Codecademy](https://shields.io)
-![Tableau](https://shields.io)
-![Python](https://shields.io)
-
-## 🎯 Project Context & Certification
+### 🎓 Project Context & Certification
 This repository represents my **capstone project and final deliverable for the Codecademy BIDA (Business Intelligence & Data Analyst) Certification**. It demonstrates my ability to drive an analytics project end-to-end: formulating strategic business questions, performing data engineering, conducting rigorous statistical validation, and translating insights into actionable executive decisions.
+
+---
 
 ## 📌 Business Case & Objectives
 In the face of climate change and rainfall variability, optimizing agricultural resources and monitoring land resilience have become business-critical factors. Leveraging data from the **LTAR** (Long-Term Agroecosystem Research) network, this project addresses two core strategic business issues:
@@ -17,7 +15,7 @@ In the face of climate change and rainfall variability, optimizing agricultural 
 ## 📊 BI Delivery (Tableau Software)
 The entire analytical process is synthesized into an interactive executive dashboard designed for strategic steering and managerial decision-making.
 
-👉 **[Access the Live Interactive Dashboard on Tableau Public](https://tableau.com)**
+👉 **[Click here to view my interactive Tableau Public Portfolio](https://public.tableau.com/app/profile/willams.kevin.koin/vizzes)**
 
 ![Dashboard Preview](dashboards/dashboard_preview.png)
 
@@ -26,12 +24,12 @@ The entire analytical process is synthesized into an interactive executive dashb
 ## 🚀 Strategic Recommendations & Business Impact
 
 ### 💧 Pillar 1: Water Resource Allocation (WUE Optimization)
-- **Insight**: *Croplands* display the highest average water use efficiency ($\mu = 14.00$), vastly outperforming *Pasture* ($\mu = 5.38$) and *Rangelands* ($\mu = 2.55$).
+- **Insight**: *Croplands* display the highest average water use efficiency, vastly outperforming *Pasture* and *Rangelands*.
 - **Recommendation**: Prioritize irrigation infrastructure cap-ex and water-tech investments on *Croplands*, where every millimeter of water generates the highest biomass return on investment.
 
 ### 🧪 Pillar 2: Operational Cost Optimization (OPEX - Nitrogen)
-- **Insight**: Soybean productivity remains strictly stable (~6400 kg/ha) regardless of the nitrogen application level (No, Low, High). As a legume, soybean naturally fixes its own nitrogen.
-- **Recommendation**: **Immediate cessation** of synthetic nitrogen fertilizer application on Soybean crops. This direct cost cut reduces OPEX with zero impact on yield. Reallocate 100% of these saved financial resources to Corn crops, which demonstrate a strong linear yield increase (+29%) under *High N* regimes.
+- **Insight**: Soybean productivity remains strictly stable regardless of the nitrogen application level (No, Low, High). As a legume, soybean naturally fixes its own nitrogen.
+- **Recommendation**: **Immediate cessation** of synthetic nitrogen fertilizer application on Soybean crops. This direct cost cut reduces OPEX with zero impact on yield. Reallocate 100% of these saved financial resources to Corn crops, which demonstrate a strong linear yield increase under *High N* regimes.
 
 ---
 
