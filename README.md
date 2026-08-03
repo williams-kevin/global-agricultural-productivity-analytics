@@ -1,8 +1,8 @@
 # 🌍 Global Agricultural & Rangeland Productivity Analytics (LTAR)
 
-[![Codecademy](https://shields.io)](https://codecademy.com)
-[![Tableau](https://shields.io)](https://public.tableau.com/app/profile/willams.kevin.koin/vizzes)
-[![Python](https://shields.io)](https://www.python.org)
+![Codecademy](https://shields.io)
+![Tableau](https://shields.io)
+![Python](https://shields.io)
 
 ## 🎯 Project Context & Certification
 This repository represents my **capstone project and final deliverable for the Codecademy BIDA (Business Intelligence & Data Analyst) Certification**. It demonstrates my ability to drive an analytics project end-to-end: formulating strategic business questions, performing data engineering, conducting rigorous statistical validation, and translating insights into actionable executive decisions.
@@ -17,7 +17,7 @@ In the face of climate change and rainfall variability, optimizing agricultural 
 ## 📊 BI Delivery (Tableau Software)
 The entire analytical process is synthesized into an interactive executive dashboard designed for strategic steering and managerial decision-making.
 
-👉 **[Access the Live Interactive Dashboard on Tableau Public](https://public.tableau.com/app/profile/willams.kevin.koin/vizzes)**
+👉 **[Access the Live Interactive Dashboard on Tableau Public](https://tableau.com)**
 
 ![Dashboard Preview](dashboards/dashboard_preview.png)
 
